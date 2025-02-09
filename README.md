@@ -9,34 +9,53 @@
 ## Key Topics Covered
 
 ### 1. **Python Programming**
-- Created Python scripts for:
-  - Currency conversion using exchange rates.
-  - File renaming with timestamps to automate tasks.
-  - Math tricks like divisibility checks for numbers.
-- Demonstrated the use of NumPy’s random number generator (RNG) for generating time-series data and plotting it with Matplotlib.
-- Explained how to select and set up Python environments (Conda, `.venv`, `uv`) in VS Code.
+- Created Python scripts for various tasks:
+  - **ChatGPT-Assisted Prompts**:
+    - A script to convert currency using exchange rates fetched from an API.
+    - A script to check divisibility by 3, 5, and 7 using mathematical properties.
+    - A script to generate time-series data using NumPy’s random number generator (RNG) and plot it with Matplotlib.
+  - **Code Provided by You**:
+    - A polar plot script sourced from a website, which was cleaned and enhanced to ensure proper functionality:
+      ```python
+      import numpy as np
+      import matplotlib.pyplot as plt
+
+      r = np.arange(0, 2, 0.01)
+      theta = 2 * np.pi * r
+
+      fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+      ax.plot(theta, r)
+      ax.set_rticks([0.5, 1, 1.5, 2])
+      ax.grid(True)
+
+      plt.show()
+      ```
+  - **Your Original Idea**:
+    - A task to generate a Pandas DataFrame with dates and random data, plotting it as a time-series chart.
 
 ### 2. **Data Visualization**
-- Generated a polar plot using Matplotlib with a simple example.
-- Created a time-series plot with random values associated with dates using NumPy and Pandas.
+- Generated visualizations using Matplotlib:
+  - A time-series plot with random data spanning 100 days.
+  - A polar plot using `theta` and `r` coordinates.
 
 ### 3. **Environment Management**
-- Discussed how to manage Python environments (`Conda`, `.venv`, `uv`) in VS Code:
+- Discussed Python environment setups (`Conda`, `.venv`, `uv`) in VS Code:
   - Selecting the interpreter via the Command Palette.
-  - Configuring the environment in `settings.json`.
+  - Configuring the default environment in `settings.json`.
+  - Installing and managing packages with `uv`.
 
 ### 4. **Package Installation**
-- Installed essential Python packages using `uv`:
+- Installed essential packages using `uv`:
   - `ipykernel`
   - `numpy`
   - `pandas`
   - `matplotlib`
 
 ### 5. **Tools and Libraries**
-- Covered Python libraries such as:
+- Explored libraries and tools like:
   - **NumPy**: For random number generation and numerical computations.
-  - **Pandas**: For creating and handling DataFrames.
-  - **Matplotlib**: For plotting data.
+  - **Pandas**: For creating and manipulating DataFrames.
+  - **Matplotlib**: For data visualization.
 
 ### 6. **Task Challenges**
 - Provided tasks to practice:
@@ -48,8 +67,18 @@
 - **Time-Series Plot**: Created a chart showing random data over 100 days.
 - **Polar Plot**: Generated a circular plot with `theta` and `r` coordinates.
 
+## Attribution of Code Prompts
+- **ChatGPT Helped Code Prompts**:
+  - Currency conversion script.
+  - Divisibility checker script.
+  - Random data time-series generation and plotting.
+- **User-Provided Code**:
+  - Polar plot script sourced from a website and cleaned.
+- **User-Initiated Idea**:
+  - DataFrame with dates and random data for a time-series chart.
+
 ## Feedback and Next Steps
-- Explore additional customizations for:
-  - Automating common Python tasks.
-  - Enhancing data visualizations with advanced techniques.
-  - Further practice with `uv` for package and environment management.
+- Explore further practice with:
+  - Automating tasks with Python (e.g., file manipulation, data preprocessing).
+  - Experimenting with advanced data visualization techniques.
+  - Deepening understanding of package and environment management using `uv` and other tools.
