@@ -82,3 +82,6 @@
   - Automating tasks with Python (e.g., file manipulation, data preprocessing).
   - Experimenting with advanced data visualization techniques.
   - Deepening understanding of package and environment management using `uv` and other tools.
+
+## video link
+[YouTube Video](https://youtu.be/OqlWrYy6IUE?list=PL0OTh76xolFYX6zX4gZLSHcMvu4gQiYOH)
